@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Машина</title>
+  <style>
+    body {
+      background: #e0f7fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .car {
+      position: relative;
+      width: 300px;
+      height: 100px;
+      background: #2196f3;
+      border-radius: 20px 20px 10px 10px;
+    }
+
+    .roof {
+      position: absolute;
+      top: -40px;
+      left: 60px;
+      width: 180px;
+      height: 50px;
+      background: #1976d2;
+      border-radius: 20px 20px 0 0;
+    }
+
+    .window {
+      position: absolute;
+      top: -35px;
+      left: 70px;
+      width: 70px;
+      height: 40px;
+      background: #bbdefb;
+      border-radius: 5px;
+    }
+
+    .window.right {
+      left: 150px;
+    }
+
+    .wheel {
+      position: absolute;
+      bottom: -20px;
+      width: 50px;
+      height: 50px;
+      background: #212121;
+      border-radius: 50%;
+      border: 5px solid #555;
+    }
+
+    .wheel.left {
+      left: 30px;
+    }
+
+    .wheel.right {
+      right: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="car">
+    <div class="roof"></div>
+    <div class="window"></div>
+    <div class="window right"></div>
+    <div class="wheel left"></div>
+    <div class="wheel right"></div>
+  </div>
+
+</body>
+</html>
